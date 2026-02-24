@@ -1,6 +1,7 @@
 package com.orrinmcgorrin;
 
 import com.orrinmcgorrin.block.ModBlocks;
+import com.orrinmcgorrin.item.ModItemGroups;
 import com.orrinmcgorrin.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -13,6 +14,8 @@ public class Testmod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+
+		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 	}
